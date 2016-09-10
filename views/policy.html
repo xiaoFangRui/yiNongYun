@@ -1,0 +1,71 @@
+
+
+<div>
+    <form class="logoPolicyForm logoVoteModifyForm"  >
+        <div>
+            <span>文章分类：</span>
+            <label ng-repeat="cate in policyData.cate" ng-click="policyCate(cate)" >
+                <input type="checkbox" name="cate" />{{cate}}
+            </label>
+        </div>
+        <div>
+            <span>文章类型：</span>
+            <label ng-repeat="cate in policyData.type" ng-click="policyType(type)" >
+                <input type="checkbox" name="type" />{{cate}}
+            </label>
+        </div>
+        <div>
+            <span>文章状态：</span>
+            <label ng-repeat="cate in policyData.status" ng-click="policyStatus(status)" >
+                <input type="checkbox" name="status" />{{cate}}
+            </label>
+        </div>
+        <div>
+            <span>文章标题：</span>
+            <input type="text" placeholder="请输入文章标题~"/>
+            <i>*</i>
+        </div>
+        <div>
+            <span>缩略图片：</span>
+            <a href="javascript:;" class="file" id="file">
+                <img id="preview" src="img/logoSuluotu.png" width="100" height="100" alt=""/>
+                <input id="onloadPic" class="onloadPic" type="file" multiple="multiple" />
+            </a>
+            <i>*</i>
+        </div>
+        <div>
+            <span>文章摘要：</span>
+            <textarea placeholder="请输入文章摘要"></textarea>
+        </div>
+
+    </form>
+
+    <form id="form" method="post" target="_blank">
+        <script type="text/plain" id="myEditor" name="myEditor" style="width:800px;height:240px;">
+        <p>欢迎使用UMEDITOR</p>
+    </script>
+        <input type="submit" value="通过input的submit提交">
+    </form>
+    <script type="text/javascript">
+        var um = UM.getEditor('myEditor');
+
+        //自动切换提交地址
+        //        var doc=document,
+        //                version=um.options.imageUrl||"php",
+        //                form=doc.getElementById("form");
+        //
+        //        if(version.match(/php/)){
+        //            form.action="umeditor1_2_2-src/php/getContent.php";
+        //        }else if(version.match(/net/)){
+        //            form.action="umeditor1_2_2-src/net/getContent.ashx";
+        //        }else if(version.match(/jsp/)){
+        //            form.action="umeditor1_2_2-src/jsp/getContent.jsp";
+        //        }else if(version.match(/asp/)){
+        //            form.action="umeditor1_2_2-src/asp/getContent.asp";
+        //        }
+    </script>
+
+
+
+</div>
+

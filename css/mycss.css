@@ -1,0 +1,786 @@
+
+/******************登录后台页面*****************************/
+.logoNav{
+    width:100%;
+    height:90px;
+    background-color: #0f5da9;
+
+}
+.logoNav .logoNavLeft{
+    float:left;
+    margin:20px 15px;
+}
+.logoNav .logoNavRight{
+    float:right;
+    margin:9px 15px;
+}
+/*****登录后台：导航结束********/
+/*****登录后台：左导航开始******/
+.logoInfo{
+    width:100%;
+    position: relative;
+}
+.logoLeft{
+    float:left;
+    width:250px;
+    height:985px;
+    background-color: #3f5372;
+    z-index: 999;
+}
+li.logoLeftList{
+    line-height: 40px;
+    font-size: 16px;
+    color:#fff;
+}
+li.logoLeftList p{
+    height:38px;
+    padding-left: 20px;
+    border-bottom: 1px solid #2a4672;
+    border-top: 1px solid #4c6489;
+}
+li.logoLeftList p i{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: url("../img/logoLeftSprite.png") no-repeat;
+}
+li.logoLeftList:nth-child(1) p i{
+    background-position: 0 -90px;
+}
+li.logoLeftList:nth-child(2) p i{
+    background-position: 0 -120px;
+}
+li.logoLeftList:nth-child(3) p i{
+    background-position: 0 -150px;
+}
+li.logoLeftList:nth-child(4) p i{
+    background-position: 0 -0px;
+}
+li.logoLeftList:nth-child(5) p i{
+    background-position: 0 -30px;
+}
+li.logoLeftList:nth-child(6) p i{
+    background-position: 0 -60px;
+}
+.logoLeft li.on ul{
+    display: block;
+    transition: 5s;
+}
+.logoLeft li.on p{
+    background-color: #20385e;
+}
+li.logoLeftList ul{
+    display: none;
+    transition: 5s;
+}
+li.logoLeftList ul li{
+    background-color: #7c9ed3;
+    border-bottom: 1px solid #4c6489;
+    padding-left: 60px;
+}
+li.logoLeftList ul li a{
+    color:#fff;
+}
+.logoLeft li.on ul li.on{
+    background-color: #4469a1;
+    position: relative;
+}
+.logoLeft li.on ul li.on::after{
+    content: "";
+    display: block;
+    width:0;
+    height:0;
+    position: absolute;
+    right:0;
+    top:12px;
+    border-bottom:8px solid transparent;
+    border-top:8px solid transparent;
+    border-right:8px solid #fff;
+}
+.logoLeftExit{
+    display: block;
+    color:#fff;
+    font-size: 16px;
+    width:120px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #f2cf63;
+    border-radius: 5px;
+    margin:100px auto 0;
+}
+/*****登录后台：左导航结束********/
+/*****登录后台：右导航开始*******/
+.logoRight{
+    padding-left: 250px;
+    height:985px;
+    /*background-color: aqua;*/
+
+}
+.logoRight .logoRightBottom{
+    position: absolute;
+    bottom:0;
+    left:250px;
+    right:0;
+    font-size: 16px;
+    text-align: center;
+}
+.logoRight .logoRightBottom p{
+    line-height: 40px;
+}
+.logoRightView{
+    overflow: hidden;
+    padding: 10px 0 0 10px;
+}
+/********登录后台：农场详情开始************/
+.logoFarmDetailName{
+    width:100%;
+    height:140px;
+    background-color: #e8f2ff;
+    text-align: center;
+}
+.logoFarmDetailName img{
+    margin-top:15px;
+}
+.logoFarmDetailYellow{
+    border-bottom: 1px solid #bdbdbd;
+}
+.logoFarmDetailYellow li{
+    float:left;
+    width:160px;
+    height:100px;
+    margin:30px 135px 30px 0;
+    background-color: #f2cf63;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    color:#fff;
+}
+.logoFarmDetailYellow li:last-child{
+    margin:30px 0;
+}
+.logoFarmDetailYellow li p span{
+    font-size: 30px;
+}
+.logoFarmDetailInfo dl{
+    float:left;
+    width:250px;
+    margin-top:50px;
+    position: relative;
+    padding:0 30px 30px 80px;
+}
+.logoFarmDetailInfo dl:not(:last-child)::after{
+    content: "";
+    display: inline-block;
+    width:1px;
+    height:210px;
+    background-color:#bdbdbd;
+    position: absolute;
+    right:0;
+    top:30px;
+}
+.logoFarmDetailInfo dl dt{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 60px;
+}
+.logoFarmDetailInfo dl dd{
+    color:#666;
+    line-height: 40px;
+}
+.logoFarmDetailInfo dl dd span:first-child{
+    display: inline-block;
+    width:90px;
+}
+.logoFarmDetailInfo dl dd span:last-child{
+    color:#333;
+}
+.logoFarmDetailInfo dl dd i{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background: url("../img/logoRightSprite.png") no-repeat -150px 5px;
+}
+.logoFarmDetailCred ul li{
+    display: inline-block;
+    text-align: center;
+    margin:10px;
+}
+.logoFarmDetailCred ul li p{
+    line-height: 40px;
+    font-size: 16px;
+}
+.logoFarmDetailCred ul li div{
+    border:1px solid #f2cf63;
+    width:190px;
+    height:135px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.logoFarmDetailCred ul li div img{
+    height:100%;
+}
+
+/********登录后台：农场详情结束************/
+
+/********登录后台：政策详情开始************/
+.logoPolicyDetailTitle{
+    border-bottom: 1px solid #bdbdbd;
+}
+.logoPolicyDetailTitle h2{
+    font-family: "黑体";
+    font-size: 28px;
+    line-height: 90px;
+    text-align: center;
+}
+.logoPolicyDetailTitle div p{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 60px;
+    padding-right: 50px;
+}
+.logoPolicyDetailTitle div p:nth-child(4){
+    float:right;
+}
+.logoPolicyDetailTitle div p:nth-child(3){
+    float:right;
+}
+
+.logoPolicyDetailText p{
+    font-size: 16px;
+    color:#666;
+    width:800px;
+    margin:10px auto 30px;
+    text-indent: 2em;
+
+
+}
+.logoPolicyDetailText img{
+    display: block;
+    margin:5px auto 0;
+    width:700px;
+    height:250px;
+}
+/********登录后台：政策详情结束************/
+/********登录后台：农场管理开始************/
+
+.logoBlueBtn{
+    width:120px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #0077db;
+    border-radius: 5px;
+    margin:20px ;
+    border:none;
+    outline:medium;
+    color:#fff;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+}
+.farmManagementTop div{
+    float:right;
+    margin:20px 100px 20px 0;
+    position: relative;
+}
+.farmManagementTop div input{
+    width:400px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 20px;
+    border:1px solid #c4c4c4;
+    outline: medium;
+    text-indent: 20px;
+}
+.farmManagementTop div  i{
+    position: absolute;
+    right:11px;
+    top:3px;
+    width:35px;
+    height:35px;
+    cursor: pointer;
+    background: url("../img/logoRightSprite.png") no-repeat -180px 0;
+}
+.farmManagementTable{
+    width:100%;
+
+}
+.farmManagementTable thead{
+    background-color: #78a3d8;
+    color:#fff;
+}
+.farmManagementTable tr{
+    line-height: 40px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.farmManagementTable td{
+    text-align: center;
+}
+/********登录后台：农场管理结束************/
+/********登录后台：投票开始************/
+.logoVoteTop{
+    border-bottom: 1px solid #bdbdbd;
+}
+.logoVoteTop h2{
+    font-family: "黑体";
+    font-size: 28px;
+    line-height: 90px;
+    text-align: center;
+}
+.logoVoteTop div p{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 60px;
+    margin:0 100px ;
+}
+.logoVoteChart div{
+    width:400px;
+    height:400px;
+    margin:0 auto;
+}
+.logoVoteChart p{
+    text-align: center;
+    line-height: 100px;
+}
+.logoVoteChart p a{
+    color:#0f5da9;
+}
+.logoVoteChart p a i{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background: url("../img/logoRightSprite.png") no-repeat ;
+    vertical-align: middle;
+}
+.logoVoteChart p a:nth-child(1) i{
+    background-position: -30px,10px;
+}
+.logoVoteChart p a:nth-child(2) i{
+    background-position: -60px,10px;
+}
+.logoVoteChart p a:nth-child(3) i{
+    background-position: -90px,10px;
+}
+.logoVoteChart p a:nth-child(4) i{
+    background-position: -30px,10px;
+}
+.logoVoteBottom{
+    margin-top:50px;
+    border-top: 1px solid #bdbdbd;
+}
+.logoVoteBottom p{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 60px;
+    margin-left: 100px ;
+}
+/********登录后台：投票结束************/
+/********登录后台：投票修改开始************/
+
+.logoVoteModifyForm{
+    margin-top:30px;
+    margin-left: 20px;
+    /*width:600px;*/
+}
+.logoVoteModifyForm div{
+    /*min-height: 40px;*/
+    margin:20px 0;
+}
+.logoVoteModifyForm div span{
+    color:#666;
+    margin-right: 30px;
+}
+.logoVoteModifyForm div label{
+    display: inline-block;
+    width:100px;
+    margin:0 5px;
+}
+.logoVoteModifyForm div input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+.logoVoteModifyForm div .logoVoteModifyItem{
+    padding-left:104px;
+}
+.logoVoteModifyForm div select{
+    width:400px;
+    line-height: 25px;
+    font-family: "Microsoft YaHei";
+    color:#333;
+}
+.logoVoteModifyForm .logoVoteModifyItem button{
+    border:none;
+    background-color: transparent;
+    color:#0f5da9;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: medium;
+}
+.logoVoteModifyForm div a{
+    display: block;
+    width:600px;
+    text-align: center;
+    line-height: 40px;
+}
+.logoVoteModifyBtn{
+    width:600px;
+    text-align: center;
+}
+/********登录后台：投票修改结束************/
+/********登录后台：角色管理开始************/
+.logoRoleTop{
+    width:100%;
+    height:150px;
+    /*padding:20px 0;*/
+    /*line-height: 150px;*/
+    background-color: #e8f2ff;
+    text-align: center;
+}
+.logoRoleTop img{
+    vertical-align: middle;
+}
+.logoRoleTop div{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    height:100px;
+    margin:20px;
+}
+.logoRoleTop div h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding:15px 0
+}
+.logoRoleTop div a{
+    color:#0f5da9;
+}
+.logoRoleBottom{
+    width:250px;
+    margin:50px auto;
+}
+.logoRoleBottom p{
+    line-height: 40px;
+}
+.logoRoleBottom p  span{
+    display: inline-block;
+    width:100px;
+    color:#666;
+}
+/********登录后台：角色管理结束************/
+/********登录后台：政策-文章分类开始************/
+.logoPolicyForm div input[type=text]{
+    width:400px;
+    height: 25px;
+    color:#999;
+    outline: medium;
+}
+.logoPolicyForm div i{
+    color:#ff0000;
+}
+.logoPolicyForm div a.file{
+    position: relative;
+    display: inline-block;
+    width:100px;
+    height:100px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.logoPolicyForm div a.file img{
+    width:100%;
+    height:100%;
+}
+.logoPolicyForm div a.file input{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity: 0;
+}
+.logoPolicyForm div textarea{
+    width:600px;
+    height:70px;
+    vertical-align: top;
+    outline: medium;
+}
+
+
+/********登录后台：政策-文章分类结束************/
+/*****************注册页面 开始***********************/
+
+.registerImg{
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    /*position:fixed;*/
+    /*top:0;*/
+    /*/!*bottom:0;*!/*/
+    /*left:0;*/
+    /*right:0;*/
+    background:url("../img/registerBg.png") no-repeat center ;
+    background-size: cover ;
+
+}
+.registerWrap{
+    width:1000px;
+    margin:0 auto;
+    padding:30px 0 ;
+}
+
+
+.registerAccount{
+    width:100%;
+    text-align: center;
+    margin:60px 0;
+}
+
+/****************注册页面：设置账号开始**********************/
+.registerAccountPro div{
+    float:left;
+    text-align: left;
+    margin-top:67px;
+}
+.registerAccountPro div span{
+    float:left;
+    height:24px;
+    width:24px;
+    background: url("../img/registerSprite.png") no-repeat;
+    background-position: 0 0;
+}
+.registerAccountPro div  i{
+    float:left;
+    background: url("../img/registerSprite.png") no-repeat;
+    height:2px;
+    width:283px;
+    background-position: 0 -50px;
+    margin:10px 0 ;
+}
+.registerAccountPro div p{
+    width: 75px;
+    margin: 40px 0 0 -25px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.registerAccountPro div.on span{
+    background-position: 0 -24px;
+}
+.registerAccountPro div.on i{
+    background-position: 0 -48px;
+}
+.registerAccountPro div.on p{
+    color:#01ffd2;
+}
+
+
+.registerSetting{
+    text-align: left;
+    margin:80px 0 100px 250px;
+}
+.registerSetting > div{
+    margin:32px 0;
+    position: relative;
+}
+.registerSetting > div label{
+    display: inline-block;
+    width:80px;
+    font-size: 16px;
+    color:#fff;
+    text-align: right;
+    margin-right:20px;
+}
+.registerSetting > div > input{
+    width:315px;
+    line-height: 35px;
+    background-color: rgba(250,250,250,0.1);
+    margin-right:15px;
+    text-indent: 10px;
+    border:1px solid #fff;
+    outline: medium;
+    color:#e9e9e9;
+    font-size: 16px;
+}
+.registerSetting > div  span{
+    color:#e9e9e9;
+
+}
+.registerSetting  div  i{
+    color:red;
+
+}
+.registerSetting div i.registerYzm{
+    width:90px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #ff9f00;
+    color:#fff;
+    position: absolute;
+    left:330px;
+    top:1px;
+}
+.registerSettingBtn{
+    /*padding-left: 150px;*/
+    /*padding-top:50px;*/
+    width:500px;
+    text-align: center;
+}
+.registerBtn{
+    display: inline-block;
+    width:130px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #00a672;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: medium;
+    border:none;
+    margin:0 20px;
+}
+/****************注册页面：设置账号结束**********************/
+/****************注册页面：基本信息开始**********************/
+.registerBasic .registerBasicType{
+    text-align: left;
+    margin-right: 0;
+}
+.registerBasic .registerBasicType i{
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    background: url("../img/registerBasicSprite.png") no-repeat 2px -25px;
+    vertical-align: middle;
+}
+.registerBasic .registerBasicType i.on{
+    background-position: 2px -59px;
+}
+.registerBasic div i.registerBasicArea{
+    font-size: 16px;
+    color:#fff;
+    position: absolute;
+    left:390px;
+    top:8px;
+}
+.registerBasic  div select{
+    width:90px;
+    height: 35px;
+    line-height: 37px;
+    background-color: rgba(250,250,250,0.1);
+    /*margin-right:5px;*/
+    border:1px solid #fff;
+    color:#000;
+    font-size: 16px;
+    z-index: 10;
+}
+
+.registerBasic  div i.registerBasicSelect{
+    position: relative;
+    left:-25px;
+    display: inline-block;
+    width:15px;
+    height:10px;
+    background: url("../img/registerBasicSprite.png") no-repeat 0 0;
+}
+.registerBasic .registerBasicUrl{
+    display: inline-block;
+    width:310px;
+}
+.registerBasic .registerBasicUrl label i{
+    display: inline-block;
+    width:12px;
+    height: 12px;
+    margin-right:3px;
+    background: url("../img/registerBasicRadio.png") no-repeat 0 -20px;
+}
+.registerBasic .registerBasicUrl label i.on{
+    background-position: 0 0;
+}
+.registerBasic .registerBasicUrl a{
+    float: right;
+    color:#fff;
+    font-size: 16px;
+}
+/****************注册页面：基本信息结束**********************/
+/****************注册页面：认证信息开始**********************/
+.registerApprove{
+    text-align: left;
+    margin:80px 0 100px 100px;
+}
+.registerApprove > div{
+    margin-bottom:35px;
+}
+.registerApprove > div label{
+    display: inline-block;
+    width:130px;
+    font-size: 16px;
+    color:#fff;
+    text-align: right;
+    margin-right:40px;
+}
+.registerApprove > div span{
+    color:#fff;
+    font-size: 14px;
+}
+.registerApproveFile{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:60px;
+    height:100px;
+}
+.registerApproveFile div{
+    position: relative;
+    width:100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.registerApproveFile div input{
+    width:100px;
+    height:100px;
+    position: absolute;
+    left:0;
+    top: 0;
+    opacity: 0;
+
+}
+.registerApprove > div dl{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color:#fff;
+}
+.registerSuccess{
+    color:#fff;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.5);
+    width:200px;
+    height:100px;
+    line-height:100px;
+    text-align: center;
+    border-radius:10px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-left:-100px;
+    margin-top:-50px;
+}
+.registerFail{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

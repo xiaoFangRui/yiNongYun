@@ -1,0 +1,59 @@
+<div class="registerAccountPro clearFix">
+    <div class="clearFix on">
+        <span></span><i></i>
+        <p>设置账号</p>
+    </div>
+    <div  class="clearFix">
+        <span></span><i></i>
+        <p>基本信息</p>
+    </div>
+    <div  class="clearFix">
+        <span></span><i></i>
+        <p>认证信息</p>
+    </div>
+    <div  class="clearFix">
+        <span></span>
+        <p>完成</p>
+    </div>
+</div>
+<form class="registerSetting" name="setting">
+    <div>
+        <label>农场名称：</label>
+        <input type="text" required name="name" placeholder="请输入农场全称" ng-model="regSetting.name"/>
+        <span>设置后不可更改</span>
+    </div>
+    <div>
+        <!-- ^(13|14|15|18)[0-9]$-->
+        <label>手机号：</label>
+        <input type="text" name="phone" pattern="^(13|14|15|18)[0-9]*$" ng-maxlength="13" ng-model="regSetting.phone"/>
+        <span>
+            <!--<i ng-show="setting.phone.$error.maxlength">手机号必须为数字</i>-->
+            <i ng-show="setting.phone.$error.pattern || setting.phone.$error.maxlength">手机号格式错误</i>
+        </span>
+    </div>
+    <div>
+        <label>验证码：</label>
+        <input type="text"/>
+        <i class="registerYzm">获取验证码</i>
+    </div>
+    <div>
+        <label>密码：</label>
+        <input type="password" name="password" ng-minlength="6" ng-maxlength="20" ng-model="regSetting.password"/>
+        <i ng-show="setting.password.$error.minlength || setting.password.$error.maxlength">密码不能少于6位，不能多于20位</i>
+    </div>
+    <div>
+        <label>确认密码：</label>
+        <input type="password" name="repsw" ng-model="psd" />
+        <i ng-show="psd!=regSetting.password">两次密码输入不同</i>
+    </div>
+    <div class="registerSettingBtn">
+        <registerbtn ng-disabled="setting.name.$invalid || setting.phone.$invalid || setting.password.$invalid || psd!=regSetting.password"
+                ng-click="settingSubmit()">
+            下一步
+        </registerbtn>
+    </div>
+</form>
+
+
+
+

@@ -1,0 +1,68 @@
+<div class="registerAccountPro clearFix">
+    <div class="clearFix">
+        <span></span><i></i>
+        <p>设置账号</p>
+    </div>
+    <div  class="clearFix on">
+        <span></span><i></i>
+        <p>基本信息</p>
+    </div>
+    <div  class="clearFix">
+        <span></span><i></i>
+        <p>认证信息</p>
+    </div>
+    <div  class="clearFix">
+        <span></span>
+        <p>完成</p>
+    </div>
+</div>
+<form class="registerBasic registerSetting" >
+    <div>
+        <label>经营种类：</label>
+        <label class="registerBasicType" ng-repeat=" i in type" ng-click="typeClick(i)" >
+            <i ng-class="{'true':'on'}[regBasic.type.indexOf(i)!=-1]"></i> {{i}}
+            <!--<input type="checkbox"/>{{i}}-->
+        </label>
+    </div>
+    <div>
+        <label>联系人：</label>
+        <input type="text" required name="link"  ng-model="regBasic.link"/>
+        <span>请填写真实姓名</span>
+    </div>
+    <div>
+        <label>农场面积：</label>
+        <input type="text" required name="area"  ng-model="regBasic.area"/>
+        <i class="registerBasicArea">亩</i>
+    </div>
+    <div>
+
+        <label>地区：</label>
+        <select ng-model="regBasic.city.province"  >
+            <option ng-repeat="item in city | registerCity:0" value="{{item.id}}">{{item.name}}</option>
+        </select>
+        <i class="registerBasicSelect"></i>
+        <select  ng-model="regBasic.city.city" ng-show="regBasic.city.province">
+            <option ng-repeat="item in city | registerCity:regBasic.city.province" value="{{item.id}}">{{item.name}}</option>
+        </select>
+        <i class="registerBasicSelect" ng-show="regBasic.city.province"></i>
+        <select  ng-model="regBasic.country" ng-show="regBasic.city.province && regBasic.city.city">
+            <option ng-repeat="item in city | registerCity:regBasic.city.city" value="{{item.id}}">{{item.name}}</option>
+        </select>
+        <i class="registerBasicSelect" ng-show="regBasic.city.province && regBasic.city.city"></i>
+    </div>
+    <div>
+        <label>农场地址：</label>
+        <input type="text" required name="address"  ng-model="regBasic.address"/>
+    </div>
+    <div>
+        <label>网站模板：</label>
+        <div class="registerBasicUrl">
+            <label ng-click="registerUrl()"><i ng-class="{'true':'on'}[basicUrl]"></i>生成官网</label>
+            <a href="#">效果预览</a>
+        </div>
+    </div>
+    <div class="registerSettingBtn">
+        <registerbtn ng-click="basicLast()">上一步</registerbtn>
+        <registerbtn ng-click="basicNext()">下一步</registerbtn>
+    </div>
+</form>

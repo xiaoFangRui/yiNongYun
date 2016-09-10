@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/css/mycss.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/farmDetail.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/farmManagement.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/logo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/policy.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/policyDetail.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/productDetail.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/role.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/vote.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/controller/voteModify.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/directive/logobtn.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/logoRoute.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/voteModify.html" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
