@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="mainCtrl">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/yahoo.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.page.js"></script>
+    <script src="js/myjs/indexfooter.js"></script>
+    <script src="js/directive/navdirective.js"></script>
+    <script src="js/controller/indexctrl.js"></script>
+    <script src="js/controller/listctrl.js"></script>
+    <script src="js/controller/detailctrl.js"></script>
+    <script src="js/route.js"></script>
+</head>
+<body ng-controller="main">
+<headertop></headertop>
+
+<div class="container">
+    <!--<div class="nav">-->
+        <!--<div class="navcont">-->
+            <!--<span>欢迎您访问绥棱县大数据应用云平台！</span>-->
+            <!--<p><a href="">登录</a> | <a href="">注册</a></p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="service">
+        <div class="logo">
+            <img src="img/prologo.png" alt=""/>
+        </div>
+        <div class="search">
+            <form action="">
+                <input type="text" class="input" placeholder="蓝莓"/>
+                <input type="button" class="btn" value="搜索"/>
+            </form>
+        </div>
+    </div>
+    <div class="wrap">
+        <navbtn></navbtn>
+        <div ng-view></div>
+    </div>
+</div>
+
+<!--商品展示部分-->
+<div class="bottom">
+    <div class="bottomText">
+        <ul>
+            <li>
+                <div class="xian">鲜</div>
+                <div class="xianText">
+                    <span>新鲜精选</span>
+                    <p>新鲜精选 购物无忧</p>
+                </div>
+            </li>
+            <li>
+                <div class="xian">优</div>
+                <div class="xianText">
+                    <span>品质最佳</span>
+                    <p>生态产品 品质最佳</p>
+                </div>
+            </li>
+            <li>
+                <div class="xian">特</div>
+                <div class="xianText">
+                    <span>特色服务</span>
+                    <p>热情服务 客户至上</p>
+                </div>
+            </li>
+            <li>
+                <div class="xian">省</div>
+                <div class="xianText">
+                    <span>天天低价</span>
+                    <p>自产自销 价格最低</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="back">
+        <a href="javascript:;">
+            <img src="img/back.png" alt="图片未显示"/>
+        </a>
+    </div>
+</div>
+<indexfooter></indexfooter>
+<!--<div class="footer">-->
+    <!--<span>主办单位：绥棱县农业局</span>-->
+<!--</div>-->
+<script src="js/controller/indexctrl.js"></script>
+<script>
+    $('.back').click(function(){
+        $("html,body").animate({
+            scrollTop:0
+        },500);
+    });
+</script>
+
+
+</body>
+
+</html>

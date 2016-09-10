@@ -1,0 +1,47 @@
+<div>
+    <div class="farmManagementTop">
+        <logobluebtn>添加</logobluebtn>
+        <logobluebtn>详情</logobluebtn>
+
+        <div>
+            <input type="text" placeholder="请输入搜索内容"/>
+            <i></i>
+        </div>
+    </div>
+    <table class="farmManagementTable">
+        <thead>
+            <tr>
+                <td>
+                    <input type="checkbox"/><label>序号</label>
+                </td>
+                <td>农场名称</td>
+                <td>联系人</td>
+                <td>手机号</td>
+                <td>农场面积(亩)</td>
+                <td>实际产量(吨)</td>
+                <td>实际销量(吨)</td>
+                <td>认证等级</td>
+                <td>积分</td>
+                <td>状态</td>
+                <td>操作</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="i in info">
+                <td>
+                    <input type="checkbox"/><label>{{i.number}}</label>
+                </td>
+                <td>{{i.name}}</td>
+                <td>{{i.link}}</td>
+                <td>{{i.phone}}</td>
+                <td>{{i.area}}</td>
+                <td>{{i.production}}</td>
+                <td>{{i.sale}}</td>
+                <td>{{i.level}}</td>
+                <td>{{i.score}}</td>
+                <td>{{i.account}}</td>
+                <td>{{i.operation}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="mainCtrl">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/yahoo.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/myjs/indexfooter.js"></script>
+    <script src="js/directive/navdirective.js"></script>
+    <script src="js/myjs/newData.js"></script>
+</head>
+<body ng-controller="newSumCtrl">
+<headertop></headertop>
+<headernav></headernav>
+<div class="newArea">
+    <div class="newBannerArea"></div>
+    <div class="newContainerArea" ng-controller="newCtrl">
+        <ul class="newNav" ng-click="FarmOrPolicy($event)">
+            <li data-type="农业新闻">农业动态</li>
+            <li data-type="政策新闻">政策动态</li>
+        </ul>
+        <div class="newFarmArea">
+            <div class="farmCont">
+                <!--<a href="javascript:;"  ng-repeat="fitem in fitems" ng-click="itemNewDetails(fitem.newid)" >-->
+                <a ng-repeat="fitem in fitems" ng-click="itemNewDetails(fitem.newid)" >
+                    <div class="framItem">
+                        <div class="fimg">
+                            <img ng-src="{{fitem.img}}"/>
+                        </div>
+                        <div class="fcont">
+                            <h3>{{fitem.title}}</h3>
+                            <p class="c333">{{fitem.content}}</p>
+                            <p class="c666"><i>{{fitem.type}}</i><span>{{fitem.time}}</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="newPages">
+                <div class="newPagesSmall">
+                    <i ng-click="NewPageUp()">上一页</i>
+                    <i ng-repeat="newpage in newpages"
+                       ng-click="ChangeNewPage(newpage)"
+                            >
+                        {{newpage+1}}
+                    </i>
+                    <i ng-click="NewPageDown()">下一页</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<indexfooter></indexfooter>
+</body>
+</html>

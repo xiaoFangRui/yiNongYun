@@ -1,0 +1,48 @@
+<div>
+    <form name="myForm"  class="logoVoteModifyForm">
+        <div>
+            <span>投票分类：</span>
+            <label ng-repeat="cate in voteData.cate" ng-click="voteCate(cate)" >
+                <input type="checkbox" name="cate" />{{cate}}
+            </label>
+        </div>
+        <div>
+            <span>文章类型：</span>
+            <label ng-repeat="type in voteData.type" ng-click="voteType(type)">
+                <input type="checkbox" name="cate"  />{{type}}
+            </label>
+        </div>
+        <div>
+            <span>投票状态：</span>
+            <label ng-repeat="status in voteData.status" ng-click="voteStatus(status)">
+                <input type="checkbox" name="cate"  />{{status}}
+            </label>
+        </div>
+        <div>
+            <span>投票标题：</span>
+            <!--<input type="text" value="大家都喜欢什么类型的农场？" ng-model="vote.title"/>-->
+            <select name="title" ng-model="vote.title">
+                <option value="{{item}}" ng-repeat="item in voteData.title">{{item}}</option>
+            </select>
+        </div>
+        <div>
+            <span style="float:left;">投票选项：</span>
+            <div class="logoVoteModifyItem" ng-repeat=" j in vote.item">
+                <select name="title" ng-model="j.value"
+                        ng-options=" item for item in voteData.item">
+                </select>
+                <button ng-click="deleteVoteItem(j)">移除</button>
+            </div>
+            <a href="javascript:;" ng-click="addVoteItem()">继续添加</a>
+        </div>
+        <p class="logoVoteModifyBtn">
+            <logobluebtn ng-click="voteSubmit()">确定</logobluebtn>
+            <logobluebtn ng-click="voteResize()">取消</logobluebtn>
+
+            <!--<button ng-click="voteSubmit()">确定</button>-->
+            <!--<button ng-click="voteResize()">取消</button>-->
+        </p>
+
+    </form>
+
+</div>

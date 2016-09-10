@@ -1,0 +1,122 @@
+<div class="goodsDisplay">
+    <div class="banner-1"></div>
+    <div class="list">
+        <ul class="flex-cont">
+            <li class="flex-item"
+                ng-repeat="i in listImg"
+                data-index="{{$index}}">
+                <img ng-src="{{i.src}}">
+            </li>
+        </ul>
+    </div>
+
+    <div class="guanggao">
+    </div>
+    <div class="guoPinText">
+        <span>果品</span>
+    <span class="more">更多 <i>>></i>
+    </span>
+    </div>
+    <div class="guopin">
+        <ul class="overflow">
+            <li ng-repeat="i in guopinList"
+                data-index="{{$index}}">
+                <img ng-src="{{i.src}}" >
+                <p>{{i.p}}</p>
+                <span>￥{{i.span}}</span>
+            </li>
+        </ul>
+        <ul class="overflow" >
+            <li ng-repeat="i in guopinList"
+                data-index="{{$index}}">
+                <img ng-src="{{i.src}}">
+                <p>{{i.p}}</p>
+                <span>￥{{i.span}}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="guoPinText">
+        <span>蔬菜</span>
+    <span class="more">更多 <i>>></i>
+    </span>
+    </div>
+    <div class="guopin">
+        <ul class="overflow" >
+            <li ng-repeat="i in shucaiList"
+                data-index="{{$index}}">
+                <img ng-src="{{i.src}}">
+                <p>{{i.p}}</p>
+                <span>￥{{i.span}}</span>
+            </li>
+        </ul>
+        <ul class="overflow" >
+            <li ng-repeat="i in shucaiList"
+                data-index="{{$index}}">
+                <img ng-src="{{i.src}}">
+                <p>{{i.p}}</p>
+                <span>￥{{i.span}}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="guoPinText">
+        <span>谷物</span>
+    <span class="more">更多 <i>>></i>
+    </span>
+    </div>
+    <div class="guopin">
+        <ul class="overflow" >
+            <li ng-repeat="i in guwuList"
+                data-index="{{$index}}">
+                <img ng-src="{{i.src}}" >
+                <p>{{i.p}}</p>
+                <span>￥{{i.span}}</span>
+            </li>
+        </ul>
+        <ul class="overflow" >
+            <li ng-repeat="i in guwuList"
+                data-index="{{$index}}">
+                <img ng-src="{{i.src}}">
+                <p>{{i.p}}</p>
+                <span>￥{{i.span}}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="guoPinText">
+        <span>禽蛋</span>
+    <span class="more">更多 <i>>></i>
+    </span>
+    </div>
+    <div class="guopin">
+        <ul class="overflow" >
+            <li ng-repeat="i in qindanList"
+                data-index="{{$index}}">
+                <img ng-src="{{i.src}}" >
+                <p>{{i.p}}</p>
+                <span>￥{{i.span}}</span>
+            </li>
+        </ul>
+        <ul class="overflow" >
+            <li ng-repeat="i in qindanList"
+                data-index="{{$index}}">
+                <img ng-src="{{i.src}}" >
+                <p>{{i.p}}</p>
+                <span>￥{{i.span}}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="guoPinText">
+        <span>其他</span>
+    <span class="more">更多 <i>>></i>
+    </span>
+    </div>
+    <div class="guopin">
+        <ul class="overflow" >
+            <li ng-repeat="i in qitaList"
+                data-index="{{$index}}">
+                <img ng-src="{{i.src}}" >
+                <p>{{i.p}}</p>
+                <span>￥{{i.span}}</span>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="mainCtrl">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/yahoo.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/myjs/indexfooter.js"></script>
+    <script src="js/directive/navdirective.js"></script>
+    <script src="js/echarts.simple.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/myjs/index.js"></script>
+    <script src="js/myjs/echarts.js"></script>
+</head>
+<body >
+<headertop></headertop>
+<headernav></headernav>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href=""><img src="imgs/banner-1.jpg" alt=""/></a></div>
+        <div class="swiper-slide"><a href=""><img src="imgs/banner-2.png" alt=""/></a></div>
+    </div>
+</div>
+
+<div class="indexBox" >
+    <div class="indexSmallLogo" ng-controller="smalllogoCtrl">
+        <ul>
+            <li ng-repeat="i in item"
+                ng-class="{true:'ty',false:'{{i.class}}'}[$index==listIndex]"
+                data-index="{{$index}}"
+                ng-mouseover="mouseover($event)"
+                    >
+                {{i.cont}}
+                <div ng-class="{true:'indexText',false:'indexText2'}[$index==listIndex]"
+                     ng-mouseover="mouseover($event)"
+                        >
+                    {{i.cont2}}<br/>
+                    {{i.cont3}}<br/>
+                    {{i.cont4}}
+                </div>
+            </li>
+        </ul>
+        <div class="clearFix"></div>
+    </div>
+</div>
+
+
+<div class="zhnyBox" ng-controller="zhnyCtrl" >
+    <div class="zhnyBox2">
+        <h1>{{item2.h1}}</h1>
+        <h3>{{item2.h3}}</h3>
+        <i></i>
+        <span>{{item2.one}}</span>
+        <br/>
+        <i></i>
+        <span>{{item2.two}}</span>
+        <br/>
+        <i></i>
+        <span>{{item2.three}}</span>
+        <img src="imgs/suiling-map.png" alt=""/>
+        <div class="clearFix"></div>
+        <div><a href="">了解更多>></a></div>
+    </div>
+</div>
+
+<div class="indexData" ng-controller="dataCtrl">
+    <h1>{{item3.h1}}</h1>
+    <div class="indexLeft">
+        <div id="main" style="width: 600px;height:400px;"></div>
+        <h3>全年产量占比</h3>
+    </div>
+    <div class="indexRight">
+        <div id="main1" style="width: 600px;height:400px;"></div>
+        <h3  class="indexH3">农场占地面积&nbsp;&nbsp;&nbsp;<span>备注：*为重点农场</span></h3>
+    </div>
+    <div class="clearFix"></div>
+</div>
+
+
+<div class="indexHUodong">
+    <h1>活动专区</h1>
+
+    <div class="indexHD">
+        <div class="indexLeft2">
+            <h3>农场特色</h3>
+            <div id="main2" style="width: 400px;height:300px;"></div>
+            <div class="indexTp"><a href="">投票</a></div>
+        </div>
+        <div class="indexCenter2">
+            <h3>产品特色</h3>
+
+            <div id="main3" style="width: 400px;height:300px;"></div>
+            <div class="indexTp"><a href="">投票</a></div>
+
+        </div>
+        <div class="indexRight2" ng-controller="paihangbang">
+            <span>换一批</span>
+
+            <h3>排行榜</h3>
+
+
+            <ul>
+                <li ng-repeat="i in items" ng-click="clickMe($index)"  ng-class="{'true':'Li'}[$index==index]">{{i.h}}</li>
+                <div class="clearFix"></div>
+            </ul>
+            <div class="one"  ng-class="{'true':'active'}['0'==index]">
+                <div ng-repeat="m in cp2" class="nongchang">{{m.one}}</div>
+
+            </div>
+            <div class="one"  ng-class="{'true':'active'}['1'==index]">
+
+                <div ng-repeat="n in cp" class="two">
+                    <span>{{n.one}}</span>
+                    <img src="imgs/active.png" alt=""/>
+                    <img src="imgs/active.png" alt=""/>
+                    <img src="imgs/xin_half.png" alt=""/>
+                    <img src="imgs/inactive.png" alt=""/>
+                    <img src="imgs/inactive.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="clearFix"></div>
+    </div>
+
+
+</div>
+<indexfooter></indexfooter>
+
+<script>
+
+    var mySwiper = new Swiper ('.swiper-container', {
+        //direction: 'vertical',
+        loop: true,
+        autoplay : 3000,
+        speed:300
+    })
+</script>
+
+</body>
+</html>

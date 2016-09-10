@@ -1,0 +1,18 @@
+<div class="headerNav" ng-controller="headernavCtrl">
+    <div class="navsmall">
+        <ul class="navleft">
+
+            <a ng-repeat="nav in navs" ng-href="{{nav.href}}">
+                <!--<li ng-class="{true:'headernavOn'}[$index==index]"-->
+                    <!--data-index="{{$index}}"-->
+                    <!--ng-mouseover="changeStyle($event)">-->
+                    <!--{{nav.con}}-->
+                <!--</li>-->
+                <li ng-class="{true:'headernavOn'}[nav.con==index]"
+                    ng-click="changeStyle(nav.con)">
+                    {{nav.con}}
+                </li>
+            </a>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,1987 @@
+
+/*【1 公共顶部和底部--Start--】*/
+/*【1.1头部样式--Start--】*/
+/*【1.1.1headertop部分的样式--Start--】*/
+headertop .header{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background: #424953;
+    color: #fff;
+    font-size: 16px;
+}
+headertop a{
+    color: #fff;
+}
+headertop .headerSmall{
+    width: 1200px;
+    margin: 7px auto auto auto;
+}
+headertop .headerSmall .headerLeft{
+    float: left;
+}
+headertop .headerSmall .headerRight{
+    float: right;
+    text-align: right;
+}
+headertop .headerRight span{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+/*【1.1.1headertop部分的样式--END--】*/
+
+/*【1.1.2headernav部分的样式--Start--】*/
+headernav .headerNav{
+    width: 100%;
+}
+headernav .navsmall{
+
+    margin: auto;
+    width: 1200px;
+    height: 117px;
+    background: url("../img/logog.png") no-repeat center left;
+}
+headernav .navleft{
+    /*vertical-align: middle;*/
+    float: right;
+    margin-top: 17px;
+}
+headernav .navleft li{
+
+    font-size: 18px;
+    float: left;
+}
+headernav .navleft a{
+    display: inline-block;
+    padding: 32px;
+    color: #999999;
+    font-size: 18px;
+}
+
+/*hover效果*/
+
+headernav li.headernavOn{
+    color: #00a671;
+    position: relative;
+}
+headernav li.headernavOn:after{
+    content:"";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background:#00a671;
+    position: absolute;bottom: -44px;
+
+}
+/*【1.1.2headernav部分的样式--END--】*/
+/*【1.1头部样式--END--】*/
+
+/*【1.2每个页面的公共底部样式--Start--】*/
+indexfooter .footer{
+    width: 100%;
+    background: #313946;
+    color: #fff;
+    font-size: 24px;
+}
+
+indexfooter .footer .footersmall{
+    text-align: center;
+    overflow: hidden;
+}
+indexfooter .footer .footersmall p{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+/*【1.2每个页面的公共底部样式--END--】*/
+/*【1 公共顶部和底部--END--】*/
+
+
+
+/*【2 新闻公告样式--Start--】*/
+/*【2.1 newBannerArea样式--Start--】*/
+.newArea .newBannerArea{
+    width: 100%;
+    height: 500px;
+    background: url("../img/newBanner.png") no-repeat center ;
+}
+/*【2.1 newBannerArea样式--END--】*/
+/*【2.2 newNav样式--Start--】*/
+.newArea .newNav{
+    width: 1200px;
+    margin:30px auto;
+    overflow: hidden;
+}
+.newArea .newNav:after{
+    content: '';
+    display: block;
+    height: 1px;
+    clear: both;
+}
+.newArea .newNav li{
+    width: 600px;
+    /*background: palegreen;*/
+    float: left;
+    text-align: center;
+    font-size: 18px;
+}
+/*【2.2 newNav样式--END--】*/
+/*【2.3 新闻内容主体样式--Start--】*/
+.newFarmArea{
+    background: #f2f2f3;
+    overflow: hidden;
+}
+.framItem:after{
+    content: "";
+    display: block;
+    height: 1px;
+    clear: both;
+}
+.newFarmArea .farmCont{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.newFarmArea .fimg{
+    width: 200px;
+    height: 200px;
+}
+.newFarmArea .fcont{
+    width: 900px;
+    height: 200px;
+    margin-left: 50px;
+}
+.newFarmArea .fcont h3{
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 30px 0;
+    font-weight: 700;
+}
+.newFarmArea .fcont p{
+    font-size: 14px;
+}
+.newFarmArea .fcont p.c333{
+    color: #333;
+
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.newFarmArea .fcont p.c666{
+    color: #666;
+    margin-top: 50px;
+}
+.newFarmArea .fcont p.c666 i{
+    margin-right: 50px;
+}
+.newFarmArea .fimg,.fcont{
+    float: left;
+}
+.newFarmArea .framItem{
+    margin: 40px 0;
+}
+
+.newFarmArea .newPagesSmall{
+    text-align: center;
+    margin: 10px auto 100px;
+}
+.newFarmArea .newPages i{
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #c0c0c0;
+    margin: 0 10px;
+
+}
+.newPageActive{
+    background: paleturquoise;
+}
+
+/*【2.3 新闻内容主体样式--END--】*/
+/*【2.4 新闻详情样式--Start--】*/
+.newItemDetails .newDetailsBox{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+
+}
+.newItemDetails .newDetailsBox h3{
+    margin-top: 20px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+}
+.newItemDetails .newDetailsBox .tip{
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin: 30px 0;
+}
+.newItemDetails article p{
+    font-size: 16px;
+}
+/*【2.4 新闻详情样式--END--】*/
+/*【2 新闻公告样式--END--】*/
+
+
+
+
+
+/*****************注册页面 开始***********************/
+.registerImg{
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    /*position:fixed;*/
+    /*top:0;*/
+    /*/!*bottom:0;*!/*/
+    /*left:0;*/
+    /*right:0;*/
+    background:url("../img/registerBg.png") no-repeat center ;
+    background-size: cover ;
+
+}
+.registerWrap{
+    width:1000px;
+    margin:0 auto;
+    padding:30px 0 ;
+}
+
+
+.registerAccount{
+    width:100%;
+    text-align: center;
+    margin:60px 0;
+}
+
+/************注册页面：设置账号开始*****/
+.registerAccountPro div{
+    float:left;
+    text-align: left;
+    margin-top:67px;
+}
+.registerAccountPro div span{
+    float:left;
+    height:24px;
+    width:24px;
+    background: url("../img/registerSprite.png") no-repeat;
+    background-position: 0 0;
+}
+.registerAccountPro div  i{
+    float:left;
+    background: url("../img/registerSprite.png") no-repeat;
+    height:2px;
+    width:283px;
+    background-position: 0 -50px;
+    margin:10px 0 ;
+}
+.registerAccountPro div p{
+    width: 75px;
+    margin: 40px 0 0 -25px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.registerAccountPro div.on span{
+    background-position: 0 -24px;
+}
+.registerAccountPro div.on i{
+    background-position: 0 -48px;
+}
+.registerAccountPro div.on p{
+    color:#01ffd2;
+}
+
+
+.registerSetting{
+    text-align: left;
+    margin:80px 0 100px 250px;
+}
+.registerSetting > div{
+    margin:32px 0;
+    position: relative;
+}
+.registerSetting > div label{
+    display: inline-block;
+    width:80px;
+    font-size: 16px;
+    color:#fff;
+    text-align: right;
+    margin-right:20px;
+}
+.registerSetting > div > input{
+    width:315px;
+    line-height: 35px;
+    background-color: rgba(250,250,250,0.1);
+    margin-right:15px;
+    text-indent: 10px;
+    border:1px solid #fff;
+    outline: medium;
+    color:#e9e9e9;
+    font-size: 16px;
+}
+.registerSetting > div  span{
+    color:#e9e9e9;
+
+}
+.registerSetting  div  i{
+    color:red;
+
+}
+.registerSetting div i.registerYzm{
+    width:90px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #ff9f00;
+    color:#fff;
+    position: absolute;
+    left:330px;
+    top:1px;
+}
+.registerSettingBtn{
+    /*padding-left: 150px;*/
+    /*padding-top:50px;*/
+    width:500px;
+    text-align: center;
+}
+.registerBtn{
+    display: inline-block;
+    width:130px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #00a672;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: medium;
+    border:none;
+    margin:0 20px;
+}
+/****************注册页面：设置账号结束**********************/
+/****************注册页面：基本信息开始**********************/
+.registerBasic .registerBasicType{
+    text-align: left;
+    margin-right: 0;
+}
+.registerBasic .registerBasicType i{
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    background: url("../img/registerBasicSprite.png") no-repeat 2px -25px;
+    vertical-align: middle;
+}
+.registerBasic .registerBasicType i.on{
+    background-position: 2px -59px;
+}
+.registerBasic div i.registerBasicArea{
+    font-size: 16px;
+    color:#fff;
+    position: absolute;
+    left:390px;
+    top:8px;
+}
+.registerBasic  div select{
+    width:90px;
+    height: 35px;
+    line-height: 37px;
+    background-color: rgba(250,250,250,0.1);
+    /*margin-right:5px;*/
+    border:1px solid #fff;
+    color:#000;
+    font-size: 16px;
+    z-index: 10;
+}
+
+.registerBasic  div i.registerBasicSelect{
+    position: relative;
+    left:-25px;
+    display: inline-block;
+    width:15px;
+    height:10px;
+    background: url("../img/registerBasicSprite.png") no-repeat 0 0;
+}
+.registerBasic .registerBasicUrl{
+    display: inline-block;
+    width:310px;
+}
+.registerBasic .registerBasicUrl label i{
+    display: inline-block;
+    width:12px;
+    height: 12px;
+    margin-right:3px;
+    background: url("../img/registerBasicRadio.png") no-repeat 0 -20px;
+}
+.registerBasic .registerBasicUrl label i.on{
+    background-position: 0 0;
+}
+.registerBasic .registerBasicUrl a{
+    float: right;
+    color:#fff;
+    font-size: 16px;
+}
+/****************注册页面：基本信息结束**********************/
+/****************注册页面：认证信息开始**********************/
+.registerApprove{
+    text-align: left;
+    margin:80px 0 100px 100px;
+}
+.registerApprove > div{
+    margin-bottom:35px;
+}
+.registerApprove > div label{
+    display: inline-block;
+    width:130px;
+    font-size: 16px;
+    color:#fff;
+    text-align: right;
+    margin-right:40px;
+}
+.registerApprove > div span{
+    color:#fff;
+    font-size: 14px;
+}
+.registerApproveFile{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:60px;
+    height:100px;
+}
+.registerApproveFile div{
+    position: relative;
+    width:100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.registerApproveFile div input{
+    width:100px;
+    height:100px;
+    position: absolute;
+    left:0;
+    top: 0;
+    opacity: 0;
+
+}
+.registerApprove > div dl{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color:#fff;
+}
+.registerSuccess{
+    color:#fff;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.5);
+    width:200px;
+    height:100px;
+    line-height:100px;
+    text-align: center;
+    border-radius:10px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-left:-100px;
+    margin-top:-50px;
+}
+.registerFail{
+    display: none;
+}
+/*****************注册页面 结束***********************/
+
+/******************登录后台页面*****************************/
+.logoNav{
+    width:100%;
+    height:90px;
+    background-color: #0f5da9;
+
+}
+.logoNav .logoNavLeft{
+    float:left;
+    margin:20px 15px;
+}
+.logoNav .logoNavRight{
+    float:right;
+    margin:9px 15px;
+}
+/*****登录后台：导航结束********/
+/*****登录后台：左导航开始******/
+.logoInfo{
+    width:100%;
+    position: relative;
+}
+.logoLeft{
+    float:left;
+    width:250px;
+    height:985px;
+    background-color: #3f5372;
+    z-index: 999;
+}
+li.logoLeftList{
+    line-height: 40px;
+    font-size: 16px;
+    color:#fff;
+}
+li.logoLeftList p{
+    height:38px;
+    padding-left: 20px;
+    border-bottom: 1px solid #2a4672;
+    border-top: 1px solid #4c6489;
+}
+li.logoLeftList p i{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: url("../img/logoLeftSprite.png") no-repeat;
+}
+li.logoLeftList:nth-child(1) p i{
+    background-position: 0 -90px;
+}
+li.logoLeftList:nth-child(2) p i{
+    background-position: 0 -120px;
+}
+li.logoLeftList:nth-child(3) p i{
+    background-position: 0 -150px;
+}
+li.logoLeftList:nth-child(4) p i{
+    background-position: 0 -0px;
+}
+li.logoLeftList:nth-child(5) p i{
+    background-position: 0 -30px;
+}
+li.logoLeftList:nth-child(6) p i{
+    background-position: 0 -60px;
+}
+.logoLeft li.on ul{
+    display: block;
+    transition: 5s;
+}
+.logoLeft li.on p{
+    background-color: #20385e;
+}
+li.logoLeftList ul{
+    display: none;
+    transition: 5s;
+}
+li.logoLeftList ul li{
+    background-color: #7c9ed3;
+    border-bottom: 1px solid #4c6489;
+    padding-left: 60px;
+}
+li.logoLeftList ul li a{
+    color:#fff;
+}
+.logoLeft li.on ul li.on{
+    background-color: #4469a1;
+    position: relative;
+}
+.logoLeft li.on ul li.on::after{
+    content: "";
+    display: block;
+    width:0;
+    height:0;
+    position: absolute;
+    right:0;
+    top:12px;
+    border-bottom:8px solid transparent;
+    border-top:8px solid transparent;
+    border-right:8px solid #fff;
+}
+.logoLeftExit{
+    display: block;
+    color:#fff;
+    font-size: 16px;
+    width:120px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #f2cf63;
+    border-radius: 5px;
+    margin:100px auto 0;
+}
+/*****登录后台：左导航结束********/
+/*****登录后台：右导航开始*******/
+.logoRight{
+    padding-left: 250px;
+    height:985px;
+    /*background-color: aqua;*/
+
+}
+.logoRight .logoRightBottom{
+    position: absolute;
+    bottom:0;
+    left:250px;
+    right:0;
+    font-size: 16px;
+    text-align: center;
+}
+.logoRight .logoRightBottom p{
+    line-height: 40px;
+}
+.logoRightView{
+    overflow: hidden;
+    padding: 10px 0 0 10px;
+}
+/********登录后台：农场详情开始************/
+.logoFarmDetailName{
+    width:100%;
+    height:140px;
+    background-color: #e8f2ff;
+    text-align: center;
+}
+.logoFarmDetailName img{
+    margin-top:15px;
+}
+.logoFarmDetailYellow{
+    border-bottom: 1px solid #bdbdbd;
+}
+.logoFarmDetailYellow li{
+    float:left;
+    width:160px;
+    height:100px;
+    margin:30px 135px 30px 0;
+    background-color: #f2cf63;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    color:#fff;
+}
+.logoFarmDetailYellow li:last-child{
+    margin:30px 0;
+}
+.logoFarmDetailYellow li p span{
+    font-size: 30px;
+}
+.logoFarmDetailInfo dl{
+    float:left;
+    width:250px;
+    margin-top:50px;
+    position: relative;
+    padding:0 30px 30px 80px;
+}
+.logoFarmDetailInfo dl:not(:last-child)::after{
+    content: "";
+    display: inline-block;
+    width:1px;
+    height:210px;
+    background-color:#bdbdbd;
+    position: absolute;
+    right:0;
+    top:30px;
+}
+.logoFarmDetailInfo dl dt{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 60px;
+}
+.logoFarmDetailInfo dl dd{
+    color:#666;
+    line-height: 40px;
+}
+.logoFarmDetailInfo dl dd span:first-child{
+    display: inline-block;
+    width:90px;
+}
+.logoFarmDetailInfo dl dd span:last-child{
+    color:#333;
+}
+.logoFarmDetailInfo dl dd i{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background: url("../img/logoRightSprite.png") no-repeat -150px 5px;
+}
+.logoFarmDetailCred ul li{
+    display: inline-block;
+    text-align: center;
+    margin:10px;
+}
+.logoFarmDetailCred ul li p{
+    line-height: 40px;
+    font-size: 16px;
+}
+.logoFarmDetailCred ul li div{
+    border:1px solid #f2cf63;
+    width:190px;
+    height:135px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.logoFarmDetailCred ul li div img{
+    height:100%;
+}
+
+/********登录后台：农场详情结束************/
+
+/********登录后台：政策详情开始************/
+.logoPolicyDetailTitle{
+    border-bottom: 1px solid #bdbdbd;
+}
+.logoPolicyDetailTitle h2{
+    font-family: "黑体";
+    font-size: 28px;
+    line-height: 90px;
+    text-align: center;
+}
+.logoPolicyDetailTitle div p{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 60px;
+    padding-right: 50px;
+}
+.logoPolicyDetailTitle div p:nth-child(4){
+    float:right;
+}
+.logoPolicyDetailTitle div p:nth-child(3){
+    float:right;
+}
+
+.logoPolicyDetailText p{
+    font-size: 16px;
+    color:#666;
+    width:800px;
+    margin:10px auto 30px;
+    text-indent: 2em;
+
+
+}
+.logoPolicyDetailText img{
+    display: block;
+    margin:5px auto 0;
+    width:700px;
+    height:250px;
+}
+/********登录后台：政策详情结束************/
+/********登录后台：农场管理开始************/
+
+.logoBlueBtn{
+    width:120px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #0077db;
+    border-radius: 5px;
+    margin:20px ;
+    border:none;
+    outline:medium;
+    color:#fff;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+}
+.farmManagementTop div{
+    float:right;
+    margin:20px 100px 20px 0;
+    position: relative;
+}
+.farmManagementTop div input{
+    width:400px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 20px;
+    border:1px solid #c4c4c4;
+    outline: medium;
+    text-indent: 20px;
+}
+.farmManagementTop div  i{
+    position: absolute;
+    right:11px;
+    top:3px;
+    width:35px;
+    height:35px;
+    cursor: pointer;
+    background: url("../img/logoRightSprite.png") no-repeat -180px 0;
+}
+.farmManagementTable{
+    width:100%;
+
+}
+.farmManagementTable thead{
+    background-color: #78a3d8;
+    color:#fff;
+}
+.farmManagementTable tr{
+    line-height: 40px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.farmManagementTable td{
+    text-align: center;
+}
+/********登录后台：农场管理结束************/
+/********登录后台：投票开始************/
+.logoVoteTop{
+    border-bottom: 1px solid #bdbdbd;
+}
+.logoVoteTop h2{
+    font-family: "黑体";
+    font-size: 28px;
+    line-height: 90px;
+    text-align: center;
+}
+.logoVoteTop div p{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 60px;
+    margin:0 100px ;
+}
+.logoVoteChart div{
+    width:400px;
+    height:400px;
+    margin:0 auto;
+}
+.logoVoteChart p{
+    text-align: center;
+    line-height: 100px;
+}
+.logoVoteChart p a{
+    color:#0f5da9;
+}
+.logoVoteChart p a i{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background: url("../img/logoRightSprite.png") no-repeat ;
+    vertical-align: middle;
+}
+.logoVoteChart p a:nth-child(1) i{
+    background-position: -30px,10px;
+}
+.logoVoteChart p a:nth-child(2) i{
+    background-position: -60px,10px;
+}
+.logoVoteChart p a:nth-child(3) i{
+    background-position: -90px,10px;
+}
+.logoVoteChart p a:nth-child(4) i{
+    background-position: -30px,10px;
+}
+.logoVoteBottom{
+    margin-top:50px;
+    border-top: 1px solid #bdbdbd;
+}
+.logoVoteBottom p{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 60px;
+    margin-left: 100px ;
+}
+/********登录后台：投票结束************/
+/********登录后台：投票修改开始************/
+
+.logoVoteModifyForm{
+    margin-top:30px;
+    margin-left: 20px;
+    /*width:600px;*/
+}
+.logoVoteModifyForm div{
+    /*min-height: 40px;*/
+    margin:20px 0;
+}
+.logoVoteModifyForm div span{
+    color:#666;
+    margin-right: 30px;
+}
+.logoVoteModifyForm div label{
+    display: inline-block;
+    width:100px;
+    margin:0 5px;
+}
+.logoVoteModifyForm div input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+.logoVoteModifyForm div .logoVoteModifyItem{
+    padding-left:104px;
+}
+.logoVoteModifyForm div select{
+    width:400px;
+    line-height: 25px;
+    font-family: "Microsoft YaHei";
+    color:#333;
+}
+.logoVoteModifyForm .logoVoteModifyItem button{
+    border:none;
+    background-color: transparent;
+    color:#0f5da9;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: medium;
+}
+.logoVoteModifyForm div a{
+    display: block;
+    width:600px;
+    text-align: center;
+    line-height: 40px;
+}
+.logoVoteModifyBtn{
+    width:600px;
+    text-align: center;
+}
+/********登录后台：投票修改结束************/
+/********登录后台：角色管理开始************/
+.logoRoleTop{
+    width:100%;
+    height:150px;
+    /*padding:20px 0;*/
+    /*line-height: 150px;*/
+    background-color: #e8f2ff;
+    text-align: center;
+}
+.logoRoleTop img{
+    vertical-align: middle;
+}
+.logoRoleTop div{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    height:100px;
+    margin:20px;
+}
+.logoRoleTop div h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding:15px 0
+}
+.logoRoleTop div a{
+    color:#0f5da9;
+}
+.logoRoleBottom{
+    width:250px;
+    margin:50px auto;
+}
+.logoRoleBottom p{
+    line-height: 40px;
+}
+.logoRoleBottom p  span{
+    display: inline-block;
+    width:100px;
+    color:#666;
+}
+/********登录后台：角色管理结束************/
+/********登录后台：政策-文章分类开始************/
+.logoPolicyForm div input[type=text]{
+    width:400px;
+    height: 25px;
+    color:#999;
+    outline: medium;
+}
+.logoPolicyForm div i{
+    color:#ff0000;
+}
+.logoPolicyForm div a.file{
+    position: relative;
+    display: inline-block;
+    width:100px;
+    height:100px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.logoPolicyForm div a.file img{
+    width:100%;
+    height:100%;
+}
+.logoPolicyForm div a.file input{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity: 0;
+}
+.logoPolicyForm div textarea{
+    width:600px;
+    height:70px;
+    vertical-align: top;
+    outline: medium;
+}
+
+/********登录后台：政策-文章分类结束************/
+
+
+
+
+/**********************************************************************/
+
+
+.swiper-container {
+    width: 100%;
+
+}
+
+.swiper-container img{
+    width:100%;
+
+}
+
+
+.indexBox{
+    width:1200px;
+    margin:0 auto;
+}
+
+.indexSmallLogo ul li{
+    float:left;
+    width:300px;
+    height:320px;
+    /*line-height:505px;*/
+    padding-top:250px;
+    box-sizing: border-box;
+    background-position: 67px 54px ;
+    text-align: center;
+    position:relative;
+    font-size:20px;
+    color:#333;
+}
+
+
+
+
+.sc{background:url("../imgs/shengchanjianguan.png") 100% no-repeat ;}
+.qx{background:url("../imgs/qixiang-1.png") 100% no-repeat ;}
+.bc{background:url("../imgs/bingchonghai.png") 100% no-repeat ;}
+.jg{background:url("../imgs/jiage.png") 100% no-repeat ;}
+.zl{background:url("../imgs/suyuan.png") 100% no-repeat ;}
+.cp{background:url("../imgs/tuijian.png") 100% no-repeat ;}
+.zc{background:url("../imgs/zhengce.png") 100% no-repeat ;}
+.zz{background:url("../imgs/jianzhan.png") 100% no-repeat ;}
+
+.indexText {
+    position:absolute;
+    top:110px;
+    left:120px;
+    color:#fff;
+    font-size:16px;
+
+}
+
+.indexSmallLogo ul .ty{
+    background:url("../imgs/shengchanjianguan-2.png") 100% no-repeat;
+    background-position: 67px 54px ;
+    color:#16cff1;
+}
+
+.indexText2 {
+    display:none;
+}
+
+
+
+.zhnyBox{
+    height:640px;
+    background:url("../imgs/zhihuinongye-bg.png") 100% no-repeat;
+
+}
+
+.zhnyBox2{
+    height:640px;
+    width:1200px;
+    margin:0 auto;
+    position:relative;
+
+}
+
+.zhnyBox2 h1{
+    padding-top:30px;
+    text-align: center;
+    color:#fff;
+    font-size: 40px;
+}
+
+
+.zhnyBox2 h3{
+    padding-top:76px;
+    text-align: left;
+    color:#fff;
+    font-size: 30px;
+}
+
+.zhnyBox2 i{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background:#fff;
+    margin-right:15px;
+    margin-top:60px;
+}
+
+
+.zhnyBox2 span{
+    margin-top:60px;
+    font-size: 30px;
+    color:#fff;
+}
+
+
+.zhnyBox2 img{
+    position:absolute;
+    right:0;
+    bottom:45px;
+}
+
+
+.zhnyBox2 a{
+    display:inline-block;
+    margin-top:55px;
+    text-align: center;
+    width:200px;
+    height:50px;
+    line-height: 50px;
+    font-size: 18px;
+    color:#fff;
+    background:url("../imgs/liaojie_bg.png") 100% no-repeat;
+}
+
+
+.zhnyBox2 a:hover{
+    background:url("../imgs/liaojie_bg_hover.png") 100% no-repeat;
+}
+
+
+
+.indexData{
+    width:1200px;
+    height:640px;
+    background:#fff;
+    margin:0 auto;
+}
+
+
+.indexData h1{
+    font-size: 40px;
+    text-align: center;
+    color:#333;
+    padding-top:30px;
+}
+
+.indexData h3{
+    text-align: center;
+    font-size: 24px;
+    color:#333;
+}
+
+.indexData span{
+    font-size:16px;
+    color:#666;
+    position:absolute;
+    right: 70px;
+    top: 5px;
+}
+
+
+.indexH3{
+    position:relative;
+}
+
+.indexLeft{
+    float:left;
+}
+
+.indexRight{
+    float:left;
+}
+
+
+.indexHUodong{
+    height:640px;
+    background:#f0f0f0;
+}
+
+.indexHD{
+    width:1200px;
+    margin:0 auto;
+}
+
+.indexHUodong h1{
+    font-size: 40px;
+    text-align: center;
+    color:#333;
+    padding-top:30px;
+}
+
+.indexTp{
+    text-align: center;
+}
+
+.indexTp a{
+    margin: 0 auto;
+    display:inline-block;
+    width:200px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    background:#17cff1;
+    margin-top:30px;
+}
+
+.indexLeft2{
+    float:left;
+}
+
+.indexCenter2{
+    float:left;
+}
+
+
+.indexRight2{
+    float:left;
+    width:300px;
+
+}
+
+
+.indexHD{
+    padding-top:70px;
+}
+
+.indexHD h3{
+    text-align: center;
+
+    color:#333;
+    font-size: 24px;
+}
+
+.indexRight2  li{
+    float:left;
+    list-style: none;
+    padding:8px 15px;
+    border-bottom:1px solid gray;
+}
+
+
+.indexRight2 h3{
+    display:inline-block;
+}
+.indexRight2 .one{
+    display:none;
+    width:200px;
+    height:400px;
+
+}
+
+
+.indexRight2 .active{
+    display:block;
+    width:200px;
+    height:400px;
+}
+
+.indexRight2 .Li{
+    box-sizing: border-box;
+    color: #16cff1;
+    float:left;
+    list-style: none;
+    padding:8px 15px;
+    border-bottom:2px solid #16cff1;
+}
+
+
+.one span{
+    margin-right:35px;
+}
+
+.two{
+    margin-top:29px;
+    margin-bottom:11px;
+    width:200px;
+    height:20px;
+}
+
+.nongchang{
+    margin:20px 0;
+}
+/********************************************************/
+
+/*商品展示部分*/
+.banner-1{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url("../img/banner-1.png") no-repeat center;
+    background-size: cover;
+}
+
+
+.list{
+    width: 1200px;
+    height: 240px;
+    margin: 0 auto;
+}
+.flex-item{
+    width: 200px;
+    height: 200px;
+    margin:20px;
+    float: left;
+}
+
+.guanggao{
+    width: 100%;
+    height: 150px;
+    background: url("../img/guanggao.png") no-repeat center;
+    background-size: 100% 150px;
+}
+
+.guoPinText{
+    width: 1157px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px auto;
+    border-bottom: 2px solid  #00a671;
+    border-left: 4px solid  #00a671;
+    text-indent: 20px;
+}
+
+.guoPinText span{
+    font-family: "Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #333;
+}
+
+
+.guoPinText .more{
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.guopin{
+    width: 1200px;
+    margin: 10px auto;
+}
+.guopin ul{
+    display: block;
+    width: 1200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.overflow{
+    overflow: auto;
+    zoom: 1;
+}
+.guopin ul li{
+    float: left;
+    width: 200px;
+    height: 260px;
+    margin:10px 20px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+}
+
+.guopin ul li p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.guopin ul li span{
+    font-size: 18px;
+    color: #00a671;
+    display: block;
+    margin-top: 8px;
+}
+
+.shuCaiText{
+    width: 1157px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    margin: 20px auto;
+    border-bottom: 2px solid  #00a671;
+    border-left: 4px solid  #00a671;
+    text-indent: 20px;
+}
+
+
+
+/*推介部分*/
+
+.con1, .con2{
+    width: 1200px;
+    height: auto;
+    margin:30px auto;
+}
+.geduan{
+    width: 1052px;
+    height: 43px;
+    border-bottom: 2px solid #00a671;
+    margin-left: 150px;
+}
+.geduan span{
+    display: inline-block;
+    height: 43px;
+    line-height: 43px;
+    margin-left: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color:#333333;
+    font-weight: bold;
+}
+.listnav{
+    width: 100%;
+    height: 40px;
+}
+.listnav *{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#333333;
+}
+.con1 ul{
+    width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.con1 ul li{
+    float: left;
+    width: 200px;
+    height: 260px;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+}
+
+.con1 ul li p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+.con1 ul li span{
+    font-size: 18px;
+    color: #00a671;
+    display: block;
+    margin-top: 5px;
+}
+
+.con1 .page{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    margin:80px auto;
+    -moz-user-select:none;
+    user-select:none;
+}
+.con1 .page li{
+    float: none;
+    display: inline-block;
+    width: 30px;
+    height:30px ;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px;
+    background-color: #e8e8e8;
+    border: 1px solid #c0c0c0;
+    cursor: pointer;
+}
+.con1 .page li.disabled{
+    color: #bfbfbf;
+    background: #f2f2f2;
+    width: 60px;
+    cursor: not-allowed;
+}
+.con1 .page .current{
+    background-color: #e8e8e8;
+    border: 1px solid #00a671;
+    color:#00a671;
+}
+.con1 .page .prevPage,.con1 .page .nextPage{
+    width: 60px;
+}
+.con1 .page .elli{
+    width: 30px;
+    height:30px ;
+    line-height: 30px;
+    margin: 10px 0px;
+    background-color: #fff;
+    border:0;
+}
+
+/*信息详情部分*/
+
+.overflow{
+    overflow: auto;
+    zoom: 1;
+}
+.con2 .imgPlay{
+    float: left;
+
+}
+.con2 .imgPBig{
+    position: relative;
+    height: 300px;
+}
+.con2 .imgPBig img{
+    display: block;
+    position:absolute;
+    top:0;
+    left: 0;
+}
+.con2 .imgPSmall{
+    overflow: hidden;
+}
+.con2 .imgPSmall li{
+    float: left;
+    margin: 10px 15px 0 0;
+}
+.imgPSmall li img{
+    border:2px solid transparent;
+}
+.con2 .imgPSmall img.on{
+    border:2px solid #02a671;
+}
+.textPlay {
+    margin:15px 0 0 20px;
+    float: left;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.textPlay p{
+    height:32px;
+    line-height: 32px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #666;
+
+}
+.textPlay .textFirst{
+    font-size: 18px;
+    color: #333;
+    font-family: "SimHei";
+}
+.textPlay .textSecond{
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #f36e21;
+}
+.textPlay .textThird{
+    font-size: 24px;
+    font-weight: bold;
+    color: #00a671;
+}
+
+.textEight{
+    width: 170px;
+    height: 32px;
+    margin-top: 15px;
+}
+.shuliang{
+    float: left;
+    position: relative;
+    width: 49px;
+    height: 35px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.shuliang .sl{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-family: Arial;
+    border: 1px solid #8e8e8e;
+}
+
+.shuliang .fuhao{
+    position: absolute;
+    top: 0;
+    left: 32px;
+    float: right;
+    width: 15px;
+    height: 30px;
+    border-right: 1px solid #8e8e8e;
+    border-top: 1px solid #8e8e8e;
+    border-bottom: 1px solid #8e8e8e;
+}
+.shuliang .jia,.jian{
+    width: 15px;
+    height: 13.5px;
+    line-height: 13.5px;
+    text-align: center;
+    cursor:pointer;
+}
+.shuliang .jian{
+    border-top: 1px solid #8e8e8e;
+}
+
+.textPlay .buy{
+    float: right;
+    width: 100px;
+    height: 30px;
+}
+.textEight .buy a{
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #00a671;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+}
+
+.textNine{
+    margin-top: 30px;
+    width: 80px;
+    height: 22px;
+    line-height: 22px;
+}
+.textNine i{
+    display: inline-block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    background: url("../img/fenxiang.png")no-repeat center;
+}
+
+.textNine a{
+    float: right;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+}
+
+/*农场基本信息部分*/
+.farmInfo{
+    margin-top: 20px;
+    float: right;
+    width: 197px;
+    border: 1px solid #c0c0c0;
+}
+
+.farmInfo .infoImg{
+    width: 195px;
+    height: 195px;
+    margin: 0 auto;
+}
+
+.infoText1{
+    margin: 5px auto;
+    width: 100px;
+    height: 30px;
+    line-height: 36px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+
+.infoText2{
+    border-top: 1px solid #c0c0c0;
+    width: 185px;
+    margin:0px auto;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+
+.infoText2 p{
+    width: 185px;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*产品详情*/
+.goodsDetail{
+    width: 1200px;
+    height: 1944px;
+    margin: 20px auto;
+}
+.goodsDetail .cpxq{
+    margin: 0 auto;
+    width: 1200px;
+    height: 50px;
+    background: url("../img/product-detail-bg.png") no-repeat center;
+}
+
+.detailText{
+    width: 119px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    font-weight: normal;
+    color: #f36e21;
+}
+
+.detailImg{
+    position: relative;
+    width: 1198px;
+    height: 1910px;
+    border-left: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+}
+.detailImg img{
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    display: block;
+    width: 1180px;
+    height: 1890px;
+}
+
+
+
+
+/*navÉÏµÄ×ÖÌåÑùÊ½½áÊø*/
+
+
+.container{
+    width: 100%;
+    height: auto;
+}
+.nav{
+    width: auto;
+    height: 40px;
+    background-color: #333333;
+    margin: 0 auto;
+}
+
+.service{
+    width: 1200px;
+    height: 117px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 610px;
+    height: 117px;
+    margin-top: 18px;
+    float: left;
+}
+
+.search{
+    position: relative;
+    width: 520px;
+    height: 40px;
+    margin-top: 40px;
+    float: left;
+}
+
+.input{
+    display: inline-block;
+    width: 410px;
+    height: 38px;
+    border: 1px solid #00a671;
+    text-indent: 10px;
+}
+
+.btn{
+    position: absolute;
+    width: 80px;
+    height:40px;
+    background-color:#00a671;
+    border:none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.wrap{
+    width: 1200px;
+    height: auto;
+    margin: 10px auto;
+    position: relative;
+}
+
+/*·ÖÀà²¿·Ö*/
+.category{
+    z-index: 9999;
+    position: absolute;
+    margin: 0px auto;
+
+}
+
+.toggle-btn{
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #00a671;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    color: #fff;
+}
+.toggle-btn i{
+    display: inline-block;
+    background: url("../img/triangle.png");
+    width: 14px;
+    height: 8px;
+}
+
+.cont{
+    width: 149px;
+    background-color: rgba(255,255,255,0.7);
+    border-right: 1px solid #aaa;
+}
+
+.cont li{
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+}
+.cont li:hover{
+    color: #00a671;
+}
+
+.cont li.on{
+    background-color: #fff;
+    border-top:1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    /*border-left: 1px solid #aaa;*/
+    border-right: 1px solid #fff;
+}
+
+.cont img{
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 30px;
+    width: 19px;
+    height: 19px;
+}
+
+.cont span{
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.caidan{
+    position: absolute;
+    left: 150px;
+    top: 0px;
+    width: 199px;
+    height: 268px;
+    border-right: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.caidan a{
+    text-indent: 8px;
+    display: inline-block;
+    margin: 16px 8px 0 8px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.caidan a:hover{
+    color: #00a671;
+}
+
+.caidan .on{
+    display: block;
+}
+
+
+/*µ×²¿*/
+.bottom{
+    position: relative;
+    margin: 40px auto 0;
+    width: 100%;
+    height: 150px;
+    background-color: #f6f6f6;
+}
+.bottomText{
+    width: 1100px;
+    height: 150px;
+    margin-left: 140px ;
+    overflow: hidden;
+    float: left;
+}
+.bottomText ul {
+    margin-top: 35px;
+}
+.bottomText ul li .xian{
+    float: left;
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #00a671;
+    font-family: "Microsoft YaHei";
+    font-size: 30px;
+    font-weight: normal;
+    color: #00a671;
+}
+
+.bottomText ul li .xianText{
+    float: left;
+    margin: 15px;
+    font-family: "Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif;
+}
+.xianText span{
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #323232;
+}
+.bottomText p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #8a8a8a;
+}
+.bottom .back{
+    border: 1px solid #00a671;
+    border-radius: 50%;
+    position: fixed;
+    display: inline-block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+.back img{
+    width: 45px;
+    height: 40px;
+}
