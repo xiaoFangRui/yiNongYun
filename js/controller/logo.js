@@ -28,17 +28,8 @@ logo.controller("logoMain",function($scope){
                     href:"#role",
                     text:"角色管理",
                     id:0
-                },
-                {
-                    href:"#",
-                    text:"农场管理",
-                    id:1
-                },
-                {
-                    href:"#",
-                    text:"农场管理",
-                    id:2
                 }
+
             ]
         },
         {
@@ -49,11 +40,7 @@ logo.controller("logoMain",function($scope){
                     text:"产品详情",
                     id:0
                 },
-                {
-                    href:"#",
-                    text:"农场管理",
-                    id:1
-                },
+
                 {
                     href:"#",
                     text:"农场管理",
@@ -90,31 +77,10 @@ logo.controller("logoMain",function($scope){
                     id:1
                 }
             ]
-        },
-        {
-            title:"分类管理",
-            ul:[
-                {
-                    href:"#vote",
-                    text:"投票",
-                    id:0
-                },
-                {
-                    href:"#voteModify",
-                    text:"投票修改",
-                    id:1
-                },
-                {
-                    href:"#",
-                    text:"农场管理",
-                    id:2
-                }
-            ]
         }
-
     ];
 
-    $scope.listIndex = 0;
+    $scope.listIndex = 1;
     $scope.ulIndex = 0;
     $scope.logoLeftList = function(e){
         $scope.listIndex = e.target.parentNode.dataset.index;

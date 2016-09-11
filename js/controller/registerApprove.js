@@ -80,6 +80,7 @@ register.controller("registerApprove",function($scope,$timeout){
 
         var timer = $timeout(function(){
             $scope.success = false;
+            window.location.href = "login.html";
         },2000);
 
 

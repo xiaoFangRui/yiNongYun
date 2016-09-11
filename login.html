@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>智慧农业</title>
+    <link rel="stylesheet" href="css/yahoo.css"/>
+    <link rel="stylesheet" href="css/mycss.css"/>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/logoRoute.js"></script>
+    <script src="js/directive/logobtn.js"></script>
+    <script src="js/controller/logo.js"></script>
+
+
+    <script charset="utf-8" src="js/controller/policy.js"></script>
+
+    <script src="js/echarts.simple.min.js"></script>
+    <script src="js/controller/farmManagement.js"></script>
+    <script src="js/controller/farmDetail.js"></script>
+    <script src="js/controller/productDetail.js"></script>
+    <script src="js/controller/policyDetail.js"></script>
+
+    <script src="js/controller/vote.js"></script>
+    <script src="js/controller/role.js"></script>
+    <script src="js/controller/voteModify.js"></script>
+
+
+</head>
+<body ng-app="logo">
+    <nav class="logoNav clearFix">
+        <img src="img/logoLogo.png" alt="" class="logoNavLeft"/>
+        <img src="img/logoAgr.png" alt="" class="logoNavRight"/>
+    </nav>
+    <div class="logoInfo clearFix" ng-controller="logoMain">
+        <div class="logoLeft">
+            <ul>
+                <li class="logoLeftList"
+                    ng-repeat="li in list"
+                    data-index="{{$index}}"
+                    ng-class="{true:'on'}[$index==listIndex]"
+                        >
+                    <p ng-click="logoLeftList($event)"><i></i>{{li.title}}</p>
+                    <ul>
+                        <li ng-repeat="i in li.ul"
+                            ng-class="{true:'on'}[i.id==ulIndex]"
+                            ng-click="logoListUl(i.id)"
+                                ><a ng-href="{{i.href}}" ng-bind="i.text"></a>
+                         </li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="index.html" class="logoLeftExit">退出</a>
+        </div>
+        <div class="logoRight">
+            <div ng-view  class="logoRightView"></div>
+
+            <div class="logoRightBottom">
+                <p>主办单位：黑龙江省绥化市绥棱县农业局   黑ICP证 05052393号</p>
+                <p>技术支持：旗硕科技</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -4,8 +4,19 @@
 
 register.controller("registerSetting",function($scope){
     $scope.regSetting = {};
-    $scope.settingSubmit = function(){
-        console.log($scope.regSetting);
-        window.location.href = "#registerBasic";
+    //$scope.submitForm = function(isValid) {
+    //    console.log(isValid);
+    //    if (!isValid) {
+    //        alert('验证失败');
+    //    }
+    //};
+    $scope.settingSubmit = function(isValid){
+        if(isValid){
+            console.log($scope.regSetting);
+            //window.location.href = "#registerBasic";
+        }else{
+            alert('验证失败');
+        }
+
     }
 });

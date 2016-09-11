@@ -49,6 +49,6 @@ logo.config(["$routeProvider","Routes",function($routeProvider,Routes){
             controller:"policy"
         })
         .otherwise({
-            redirectTo:Routes.farmDetail
+            redirectTo:Routes.role
         })
 }]);

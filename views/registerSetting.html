@@ -16,7 +16,7 @@
         <p>完成</p>
     </div>
 </div>
-<form class="registerSetting" name="setting">
+<form class="registerSetting" name="setting" >
     <div>
         <label>农场名称：</label>
         <input type="text" required name="name" placeholder="请输入农场全称" ng-model="regSetting.name"/>
@@ -47,8 +47,9 @@
         <i ng-show="psd!=regSetting.password">两次密码输入不同</i>
     </div>
     <div class="registerSettingBtn">
-        <registerbtn ng-disabled="setting.name.$invalid || setting.phone.$invalid || setting.password.$invalid || psd!=regSetting.password"
-                ng-click="settingSubmit()">
+        <registerbtn ng-click="settingSubmit(setting.$valid )">
+                <!--ng-disabled="setting.name.$invalid || setting.phone.$invalid || setting.password.$invalid || psd!=regSetting.password"-->
+
             下一步
         </registerbtn>
     </div>
